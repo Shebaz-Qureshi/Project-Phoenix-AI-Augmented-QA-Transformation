@@ -1,0 +1,187 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Project Phoenix – GitHub Actions CI/CD Pipeline
+# Selenium + Maven + TestNG + Extent Reports
+# ──────────────────────────────────────────────────────────────────────────────
+#
+# Stage order (hard gate):
+#   1. api-tests   → Must pass before UI tests run
+#   2. ui-tests    → Chrome headless on Ubuntu runner
+#   3. report      → Uploads Extent HTML report as artifact
+#
+# Triggered on:
+#   • Every push to main / develop
+#   • Every pull request targeting main
+#   • Nightly at 02:00 UTC
+# ──────────────────────────────────────────────────────────────────────────────
+
+name: Project Phoenix – Selenium QA Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  JAVA_VERSION:   '17'
+  BASE_URL:       ${{ secrets.BASE_URL         || 'https://the-internet.herokuapp.com' }}
+  BASE_API_URL:   ${{ secrets.BASE_API_URL      || 'https://the-internet.herokuapp.com' }}
+  VALID_USERNAME: ${{ secrets.VALID_USERNAME    || 'tomsmith' }}
+  VALID_PASSWORD: ${{ secrets.VALID_PASSWORD    || 'SuperSecretPassword!' }}
+
+jobs:
+
+  # ── Job 1: API Tests (GATE) ───────────────────────────────────────────────
+  api-tests:
+    name: '🔌 API Tests (REST Assured)'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: '🔌 Run API tests (Maven profile: api)'
+        run: |
+          mvn test -P api \
+            -Dbaseurl=${{ env.BASE_URL }} \
+            -DapiBaseUrl=${{ env.BASE_API_URL }} \
+            -DvalidUsername=${{ env.VALID_USERNAME }} \
+            -DvalidPassword=${{ env.VALID_PASSWORD }} \
+            -Dheadless=true \
+            --no-transfer-progress
+        env:
+          CI: true
+
+      - name: Upload Extent Report (API)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: extent-report-api
+          path: extent-reports/
+          retention-days: 30
+
+      - name: Upload Surefire results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: surefire-api
+          path: target/surefire-reports/
+          retention-days: 14
+
+  # ── Job 2: UI Tests (gated on api-tests) ─────────────────────────────────
+  ui-tests:
+    name: '🖥️ UI Tests (Selenium + Chrome)'
+    runs-on: ubuntu-latest
+    needs: api-tests           # ← HARD GATE
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Install Google Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
+            sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update -q
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
+
+      - name: '🖥️ Run UI tests (Maven profile: ui, headless)'
+        run: |
+          mvn test -P ui \
+            -Dbrowser=chrome \
+            -Dheadless=true \
+            -Dbaseurl=${{ env.BASE_URL }} \
+            -DvalidUsername=${{ env.VALID_USERNAME }} \
+            -DvalidPassword=${{ env.VALID_PASSWORD }} \
+            --no-transfer-progress
+        env:
+          CI:          true
+          DISPLAY:     ':99'
+
+      - name: Upload screenshots on failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: failure-screenshots
+          path: extent-reports/screenshots/
+          retention-days: 7
+
+      - name: Upload Extent Report (UI)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: extent-report-ui
+          path: extent-reports/
+          retention-days: 30
+
+      - name: Upload Surefire results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: surefire-ui
+          path: target/surefire-reports/
+          retention-days: 14
+
+  # ── Job 3: Report Summary ─────────────────────────────────────────────────
+  report:
+    name: '📊 Report Summary'
+    runs-on: ubuntu-latest
+    needs: [ api-tests, ui-tests ]
+    if: always()
+
+    steps:
+      - name: Download API report
+        uses: actions/download-artifact@v4
+        with:
+          name: extent-report-api
+          path: reports/api/
+        continue-on-error: true
+
+      - name: Download UI report
+        uses: actions/download-artifact@v4
+        with:
+          name: extent-report-ui
+          path: reports/ui/
+        continue-on-error: true
+
+      - name: List report artifacts
+        run: |
+          echo "=== Report Artifacts ==="
+          find reports/ -name "*.html" 2>/dev/null | head -20 || echo "No HTML reports found"
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 📊 Project Phoenix – Test Report\n\nExtent Report artifacts available in [Actions Run #${{ github.run_number }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})\n\n- API Tests: ${{ needs.api-tests.result }}\n- UI Tests: ${{ needs.ui-tests.result }}`
+            })
