@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ── Project Coordinates ──────────────────────────────────────────── -->
+    <groupId>com.phoenix</groupId>
+    <artifactId>project-phoenix-selenium</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>Project Phoenix – Selenium QA Framework</name>
+    <description>
+        AI-Augmented QA Automation Framework using Selenium, Maven, TestNG,
+        and Extent Reports. Implements Page Object Model with Self-Healing
+        Locators for the Merchant KYC Portal.
+    </description>
+
+    <!-- ── Global Properties ────────────────────────────────────────────── -->
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Dependency Versions -->
+        <selenium.version>4.18.1</selenium.version>
+        <testng.version>7.9.0</testng.version>
+        <extentreports.version>5.1.1</extentreports.version>
+        <restassured.version>5.4.0</restassured.version>
+        <webdrivermanager.version>5.7.0</webdrivermanager.version>
+        <slf4j.version>2.0.12</slf4j.version>
+        <log4j.version>2.23.1</log4j.version>
+        <commons.io.version>2.15.1</commons.io.version>
+        <jackson.version>2.17.0</jackson.version>
+        <assertj.version>3.25.3</assertj.version>
+        <maven.surefire.version>3.2.5</maven.surefire.version>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
+
+        <!-- TestNG Suite Files -->
+        <testng.suite.file>testng.xml</testng.suite.file>
+    </properties>
+
+    <!-- ── Dependencies ─────────────────────────────────────────────────── -->
+    <dependencies>
+
+        <!-- ── Selenium WebDriver ───────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- WebDriverManager – auto-downloads browser drivers (no chromedriver path needed) -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- ── TestNG ───────────────────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+
+        <!-- ── Extent Reports ───────────────────────────────────────────── -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+        </dependency>
+
+        <!-- ── REST Assured – API Testing ───────────────────────────────── -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restassured.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${restassured.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>xml-path</artifactId>
+            <version>${restassured.version}</version>
+        </dependency>
+
+        <!-- ── Jackson – JSON handling ──────────────────────────────────── -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- ── Logging ──────────────────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!-- ── Commons IO – file utilities ──────────────────────────────── -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+        </dependency>
+
+        <!-- ── AssertJ – fluent assertions ──────────────────────────────── -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ── Build Configuration ──────────────────────────────────────────── -->
+    <build>
+        <plugins>
+
+            <!-- Maven Compiler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Maven Surefire – TestNG execution -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <!-- Points to the TestNG suite XML -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${testng.suite.file}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!-- JVM args for headless CI -->
+                    <argLine>
+                        --add-opens java.base/java.lang=ALL-UNNAMED
+                        --add-opens java.base/java.util=ALL-UNNAMED
+                    </argLine>
+                    <!-- Continue after failure so reports are always generated -->
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <failIfNoTests>false</failIfNoTests>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+        <!-- Include resources -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>false</filtering>
+            </testResource>
+        </testResources>
+    </build>
+
+    <!-- ── Profiles ─────────────────────────────────────────────────────── -->
+    <profiles>
+
+        <!-- Run API tests only -->
+        <profile>
+            <id>api</id>
+            <properties>
+                <testng.suite.file>testng-api.xml</testng.suite.file>
+            </properties>
+        </profile>
+
+        <!-- Run UI tests only -->
+        <profile>
+            <id>ui</id>
+            <properties>
+                <testng.suite.file>testng-ui.xml</testng.suite.file>
+            </properties>
+        </profile>
+
+        <!-- Headless CI mode -->
+        <profile>
+            <id>ci</id>
+            <properties>
+                <testng.suite.file>testng.xml</testng.suite.file>
+            </properties>
+        </profile>
+
+    </profiles>
+
+</project>

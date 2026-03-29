@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Project Phoenix – Full Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>10 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Project_Phoenix___Full_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods, 6 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" class="hide-methods failed suite-Project_Phoenix___Full_Suite"> (hide)</a> <!-- hide-methods failed suite-Project_Phoenix___Full_Suite -->
+                      <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" class="show-methods failed suite-Project_Phoenix___Full_Suite"> (show)</a> <!-- show-methods failed suite-Project_Phoenix___Full_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Project_Phoenix___Full_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.UploadTest" class="method navigator-link" hash-for-method="testDynamicContentLoading">testDynamicContentLoading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.UploadTest" class="method navigator-link" hash-for-method="testFileInputElementPresent">testFileInputElementPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testInvalidPasswordReturnsError">testInvalidPasswordReturnsError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testInvalidUsernameReturnsError">testInvalidUsernameReturnsError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.UploadTest" class="method navigator-link" hash-for-method="testSuccessfulFileUpload">testSuccessfulFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testValidLoginReturnsRedirectOrOk">testValidLoginReturnsRedirectOrOk</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Project_Phoenix___Full_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" class="hide-methods passed suite-Project_Phoenix___Full_Suite"> (hide)</a> <!-- hide-methods passed suite-Project_Phoenix___Full_Suite -->
+                      <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" class="show-methods passed suite-Project_Phoenix___Full_Suite"> (show)</a> <!-- show-methods passed suite-Project_Phoenix___Full_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Project_Phoenix___Full_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testEmptyCredentialsHandledGracefully">testEmptyCredentialsHandledGracefully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testEmptyPassword">testEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testEmptyUsername">testEmptyUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testInputFieldsAreInteractable">testInputFieldsAreInteractable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testInvalidPassword">testInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testInvalidUsername">testInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testLoginResponseTimeSLA">testLoginResponseTimeSLA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testPageTitle">testPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testResponseHeadersPresent">testResponseHeadersPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testSelfHealingLocatorFallback">testSelfHealingLocatorFallback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.api.LoginApiTest" class="method navigator-link" hash-for-method="testSiteHealthCheck">testSiteHealthCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testSqlInjectionAttempt">testSqlInjectionAttempt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.UploadTest" class="method navigator-link" hash-for-method="testSubmitWithoutFileHandlesGracefully">testSubmitWithoutFileHandlesGracefully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testSuccessFlashMessageContent">testSuccessFlashMessageContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.LoginTest" class="method navigator-link" hash-for-method="testSuccessfulLogin">testSuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Phoenix___Full_Suite" title="com.phoenix.ui.UploadTest" class="method navigator-link" hash-for-method="testUploadPageAccessibleAfterLogin">testUploadPageAccessibleAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Project_Phoenix___Full_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Project_Phoenix___Full_Suite" class="panel Project_Phoenix___Full_Suite">
+          <div class="suite-Project_Phoenix___Full_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.phoenix.ui.UploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDynamicContentLoading">
+                  </a> <!-- testDynamicContentLoading -->
+                  <span class="method-name">testDynamicContentLoading</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: finish (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53557}, goog:processID: 13872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53557/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a15e73be58cbe4a4937b223ed922abd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.phoenix.pages.BasePage.waitForVisible(BasePage.java:65)
+	at com.phoenix.pages.UploadPage.triggerAndWaitForDynamicContent(UploadPage.java:103)
+	at com.phoenix.ui.UploadTest.testDynamicContentLoading(UploadTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Trigger a dynamically-loaded element – simulates async KYC status update)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFileInputElementPresent">
+                  </a> <!-- testFileInputElementPresent -->
+                  <span class="method-name">testFileInputElementPresent</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(File.java:278)
+	at com.phoenix.pages.UploadPage.selectFile(UploadPage.java:67)
+	at com.phoenix.ui.UploadTest.testFileInputElementPresent(UploadTest.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(File input element must be present and enabled on the upload page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulFileUpload">
+                  </a> <!-- testSuccessfulFileUpload -->
+                  <span class="method-name">testSuccessfulFileUpload</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(File.java:278)
+	at com.phoenix.pages.UploadPage.selectFile(UploadPage.java:67)
+	at com.phoenix.pages.UploadPage.uploadFile(UploadPage.java:89)
+	at com.phoenix.ui.UploadTest.testSuccessfulFileUpload(UploadTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Upload a .txt document and confirm the filename in the response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Phoenix___Full_Suite-class-failed -->
+          <div class="suite-Project_Phoenix___Full_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.phoenix.api.LoginApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPasswordReturnsError">
+                  </a> <!-- testInvalidPasswordReturnsError -->
+                  <span class="method-name">testInvalidPasswordReturnsError</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected HTTP 200, got 404
+Body: &lt;h1&gt;Not Found&lt;/h1&gt;
+	at com.phoenix.api.ApiClient.assertStatus(ApiClient.java:101)
+	at com.phoenix.api.LoginApiTest.testInvalidPasswordReturnsError(LoginApiTest.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(POST /login with invalid password must return an error body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidUsernameReturnsError">
+                  </a> <!-- testInvalidUsernameReturnsError -->
+                  <span class="method-name">testInvalidUsernameReturnsError</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected HTTP 200, got 404
+Body: &lt;h1&gt;Not Found&lt;/h1&gt;
+	at com.phoenix.api.ApiClient.assertStatus(ApiClient.java:101)
+	at com.phoenix.api.LoginApiTest.testInvalidUsernameReturnsError(LoginApiTest.java:117)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(POST /login with invalid username must return an error body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLoginReturnsRedirectOrOk">
+                  </a> <!-- testValidLoginReturnsRedirectOrOk -->
+                  <span class="method-name">testValidLoginReturnsRedirectOrOk</span>
+                  <div class="stack-trace">java.lang.AssertionError: HTTP 404 not in expected set
+	at com.phoenix.api.ApiClient.assertStatusIn(ApiClient.java:117)
+	at com.phoenix.api.LoginApiTest.testValidLoginReturnsRedirectOrOk(LoginApiTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(POST /login with valid credentials must produce a redirect (302) or 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Phoenix___Full_Suite-class-failed -->
+          <div class="suite-Project_Phoenix___Full_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.phoenix.ui.UploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubmitWithoutFileHandlesGracefully">
+                  </a> <!-- testSubmitWithoutFileHandlesGracefully -->
+                  <span class="method-name">testSubmitWithoutFileHandlesGracefully</span>
+                  <em>
+(Submitting without a file should not crash the application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUploadPageAccessibleAfterLogin">
+                  </a> <!-- testUploadPageAccessibleAfterLogin -->
+                  <span class="method-name">testUploadPageAccessibleAfterLogin</span>
+                  <em>
+(Upload page should be accessible immediately after login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Phoenix___Full_Suite-class-passed -->
+          <div class="suite-Project_Phoenix___Full_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.phoenix.ui.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyPassword">
+                  </a> <!-- testEmptyPassword -->
+                  <span class="method-name">testEmptyPassword</span>
+                  <em>
+(Empty password field should produce an error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyUsername">
+                  </a> <!-- testEmptyUsername -->
+                  <span class="method-name">testEmptyUsername</span>
+                  <em>
+(Empty username field should produce an error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInputFieldsAreInteractable">
+                  </a> <!-- testInputFieldsAreInteractable -->
+                  <span class="method-name">testInputFieldsAreInteractable</span>
+                  <em>
+(Username and password inputs must be interactable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPassword">
+                  </a> <!-- testInvalidPassword -->
+                  <span class="method-name">testInvalidPassword</span>
+                  <em>
+(Invalid password should show error flash)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidUsername">
+                  </a> <!-- testInvalidUsername -->
+                  <span class="method-name">testInvalidUsername</span>
+                  <em>
+(Invalid username should show error flash)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageTitle">
+                  </a> <!-- testPageTitle -->
+                  <span class="method-name">testPageTitle</span>
+                  <em>
+(Login page must have the expected page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelfHealingLocatorFallback">
+                  </a> <!-- testSelfHealingLocatorFallback -->
+                  <span class="method-name">testSelfHealingLocatorFallback</span>
+                  <em>
+(SelfHealingLocator must fall back gracefully when the primary selector is removed from the DOM at runtime)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSqlInjectionAttempt">
+                  </a> <!-- testSqlInjectionAttempt -->
+                  <span class="method-name">testSqlInjectionAttempt</span>
+                  <em>
+(SQL injection attempt should be rejected safely)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessFlashMessageContent">
+                  </a> <!-- testSuccessFlashMessageContent -->
+                  <span class="method-name">testSuccessFlashMessageContent</span>
+                  <em>
+(Success flash message text and CSS class must match expected values)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSuccessfulLogin">
+                  </a> <!-- testSuccessfulLogin -->
+                  <span class="method-name">testSuccessfulLogin</span>
+                  <em>
+(Valid credentials should redirect to secure area with success flash)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Phoenix___Full_Suite-class-passed -->
+          <div class="suite-Project_Phoenix___Full_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.phoenix.api.LoginApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyCredentialsHandledGracefully">
+                  </a> <!-- testEmptyCredentialsHandledGracefully -->
+                  <span class="method-name">testEmptyCredentialsHandledGracefully</span>
+                  <em>
+(POST /login with empty credentials must be handled gracefully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginResponseTimeSLA">
+                  </a> <!-- testLoginResponseTimeSLA -->
+                  <span class="method-name">testLoginResponseTimeSLA</span>
+                  <em>
+(POST /login must respond within the 5000ms SLA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResponseHeadersPresent">
+                  </a> <!-- testResponseHeadersPresent -->
+                  <span class="method-name">testResponseHeadersPresent</span>
+                  <em>
+(GET / must include a valid Content-Type header)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSiteHealthCheck">
+                  </a> <!-- testSiteHealthCheck -->
+                  <span class="method-name">testSiteHealthCheck</span>
+                  <em>
+(GET / – verify the site is reachable and returns HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Phoenix___Full_Suite-class-passed -->
+        </div> <!-- panel Project_Phoenix___Full_Suite -->
+        <div panel-name="test-xml-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; name=&quot;Project Phoenix – Full Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;headless&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://the-internet.herokuapp.com&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.phoenix.listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.phoenix.listeners.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;API Tests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;api&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.phoenix.api.LoginApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;UI Tests – Login&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ui&quot;/&gt;
+        &lt;include name=&quot;login&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.phoenix.ui.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Tests – Login --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;UI Tests – Upload&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ui&quot;/&gt;
+        &lt;include name=&quot;upload&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.phoenix.ui.UploadTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Tests – Upload --&gt;
+&lt;/suite&gt; &lt;!-- Project Phoenix – Full Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Project Phoenix – Full Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">API Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UI Tests – Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UI Tests – Upload (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Project Phoenix – Full Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">accessibility</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInputFieldsAreInteractable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">api</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyCredentialsHandledGracefully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidPasswordReturnsError</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidUsernameReturnsError</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginResponseTimeSLA</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testResponseHeadersPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSiteHealthCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidLoginReturnsRedirectOrOk</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">dynamic</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDynamicContentLoading</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">healing</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSelfHealingLocatorFallback</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInputFieldsAreInteractable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSelfHealingLocatorFallback</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSqlInjectionAttempt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessFlashMessageContent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">performance</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginResponseTimeSLA</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyCredentialsHandledGracefully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFileInputElementPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidPasswordReturnsError</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidUsernameReturnsError</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testResponseHeadersPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSqlInjectionAttempt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSubmitWithoutFileHandlesGracefully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSiteHealthCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessFlashMessageContent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulFileUpload</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUploadPageAccessibleAfterLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidLoginReturnsRedirectOrOk</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ui</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDynamicContentLoading</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFileInputElementPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInputFieldsAreInteractable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSelfHealingLocatorFallback</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSqlInjectionAttempt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSubmitWithoutFileHandlesGracefully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessFlashMessageContent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulFileUpload</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUploadPageAccessibleAfterLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">upload</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDynamicContentLoading</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFileInputElementPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSubmitWithoutFileHandlesGracefully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSuccessfulFileUpload</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUploadPageAccessibleAfterLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Project Phoenix – Full Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Project_Phoenix___Full_Suite');
+function tableData_Project_Phoenix___Full_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSelfHealingLocatorFallback')
+data.setCell(0, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(0, 3, 22262);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDynamicContentLoading')
+data.setCell(1, 2, 'com.phoenix.ui.UploadTest')
+data.setCell(1, 3, 16735);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPageTitle')
+data.setCell(2, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(2, 3, 3879);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFileInputElementPresent')
+data.setCell(3, 2, 'com.phoenix.ui.UploadTest')
+data.setCell(3, 3, 3511);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSuccessfulFileUpload')
+data.setCell(4, 2, 'com.phoenix.ui.UploadTest')
+data.setCell(4, 3, 2943);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSiteHealthCheck')
+data.setCell(5, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(5, 3, 2601);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUploadPageAccessibleAfterLogin')
+data.setCell(6, 2, 'com.phoenix.ui.UploadTest')
+data.setCell(6, 3, 2471);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInputFieldsAreInteractable')
+data.setCell(7, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(7, 3, 2466);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testSubmitWithoutFileHandlesGracefully')
+data.setCell(8, 2, 'com.phoenix.ui.UploadTest')
+data.setCell(8, 3, 2405);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSuccessfulLogin')
+data.setCell(9, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(9, 3, 2219);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testInvalidUsername')
+data.setCell(10, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(10, 3, 2064);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInvalidPassword')
+data.setCell(11, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(11, 3, 1720);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testEmptyUsername')
+data.setCell(12, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(12, 3, 1647);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSuccessFlashMessageContent')
+data.setCell(13, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(13, 3, 1632);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEmptyPassword')
+data.setCell(14, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(14, 3, 1371);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testEmptyCredentialsHandledGracefully')
+data.setCell(15, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(15, 3, 1075);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testValidLoginReturnsRedirectOrOk')
+data.setCell(16, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(16, 3, 1071);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testInvalidUsernameReturnsError')
+data.setCell(17, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(17, 3, 1068);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testInvalidPasswordReturnsError')
+data.setCell(18, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(18, 3, 1047);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testResponseHeadersPresent')
+data.setCell(19, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(19, 3, 1024);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLoginResponseTimeSLA')
+data.setCell(20, 2, 'com.phoenix.api.LoginApiTest')
+data.setCell(20, 3, 1022);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testSqlInjectionAttempt')
+data.setCell(21, 2, 'com.phoenix.ui.LoginTest')
+data.setCell(21, 3, 786);
+window.suiteTableData['Project_Phoenix___Full_Suite']= { tableData: data, tableDiv: 'times-div-Project_Phoenix___Full_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Project_Phoenix___Full_Suite">
+              </div> <!-- times-div-Project_Phoenix___Full_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Project Phoenix – Full Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Project_Phoenix___Full_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.phoenix.api.LoginApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testSiteHealthCheck())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSiteHealthCheck</span>
+                <span class="method-start">344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSiteHealthCheck status=SUCCESS method=LoginApiTest.testSiteHealthCheck()[pri:1,...)</span>
+                <span class="method-start">2950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testValidLoginReturnsRedirectOrOk())</span>
+                <span class="method-start">2957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidLoginReturnsRedirectOrOk</span>
+                <span class="method-start">2958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testValidLoginReturnsRedirectOrOk status=FAILURE method=LoginApiTest.testValidLogin...)</span>
+                <span class="method-start">4053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testInvalidUsernameReturnsError())</span>
+                <span class="method-start">4059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidUsernameReturnsError</span>
+                <span class="method-start">4061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidUsernameReturnsError status=FAILURE method=LoginApiTest.testInvalidUsern...)</span>
+                <span class="method-start">5138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testInvalidPasswordReturnsError())</span>
+                <span class="method-start">5140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPasswordReturnsError</span>
+                <span class="method-start">5142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidPasswordReturnsError status=FAILURE method=LoginApiTest.testInvalidPassw...)</span>
+                <span class="method-start">6194 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testEmptyCredentialsHandledGracefully())</span>
+                <span class="method-start">6195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyCredentialsHandledGracefully</span>
+                <span class="method-start">6197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyCredentialsHandledGracefully status=SUCCESS method=LoginApiTest.testEmptyC...)</span>
+                <span class="method-start">7274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testLoginResponseTimeSLA())</span>
+                <span class="method-start">7277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginResponseTimeSLA</span>
+                <span class="method-start">7278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginResponseTimeSLA status=SUCCESS method=LoginApiTest.testLoginResponseTimeSL...)</span>
+                <span class="method-start">8307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.api.LoginApiTest.testResponseHeadersPresent())</span>
+                <span class="method-start">8310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testResponseHeadersPresent</span>
+                <span class="method-start">8311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testResponseHeadersPresent status=SUCCESS method=LoginApiTest.testResponseHeadersPr...)</span>
+                <span class="method-start">9340 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.phoenix.ui.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testSuccessfulLogin())</span>
+                <span class="method-start">9655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessfulLogin</span>
+                <span class="method-start">15917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTest.testSuccessfulLogin()[pri:1, in...)</span>
+                <span class="method-start">18138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testSuccessFlashMessageContent())</span>
+                <span class="method-start">18405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSuccessFlashMessageContent</span>
+                <span class="method-start">21994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSuccessFlashMessageContent status=SUCCESS method=LoginTest.testSuccessFlashMess...)</span>
+                <span class="method-start">23627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testInvalidUsername())</span>
+                <span class="method-start">23860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidUsername</span>
+                <span class="method-start">27741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidUsername status=SUCCESS method=LoginTest.testInvalidUsername()[pri:3, in...)</span>
+                <span class="method-start">29807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testInvalidPassword())</span>
+                <span class="method-start">30054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidPassword</span>
+                <span class="method-start">33447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidPassword status=SUCCESS method=LoginTest.testInvalidPassword()[pri:4, in...)</span>
+                <span class="method-start">35170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testEmptyUsername())</span>
+                <span class="method-start">35406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyUsername</span>
+                <span class="method-start">39199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyUsername status=SUCCESS method=LoginTest.testEmptyUsername()[pri:5, instan...)</span>
+                <span class="method-start">40847 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testEmptyPassword())</span>
+                <span class="method-start">41037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyPassword</span>
+                <span class="method-start">45753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyPassword status=SUCCESS method=LoginTest.testEmptyPassword()[pri:6, instan...)</span>
+                <span class="method-start">47125 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testSqlInjectionAttempt())</span>
+                <span class="method-start">47347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSqlInjectionAttempt</span>
+                <span class="method-start">51364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSqlInjectionAttempt status=SUCCESS method=LoginTest.testSqlInjectionAttempt()[p...)</span>
+                <span class="method-start">52152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testSelfHealingLocatorFallback())</span>
+                <span class="method-start">52857 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSelfHealingLocatorFallback</span>
+                <span class="method-start">56215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSelfHealingLocatorFallback status=SUCCESS method=LoginTest.testSelfHealingLocat...)</span>
+                <span class="method-start">78478 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testPageTitle())</span>
+                <span class="method-start">78742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPageTitle</span>
+                <span class="method-start">85323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testPageTitle status=SUCCESS method=LoginTest.testPageTitle()[pri:9, instance:com.p...)</span>
+                <span class="method-start">89203 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.LoginTest.testInputFieldsAreInteractable())</span>
+                <span class="method-start">89510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInputFieldsAreInteractable</span>
+                <span class="method-start">95761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInputFieldsAreInteractable status=SUCCESS method=LoginTest.testInputFieldsAreIn...)</span>
+                <span class="method-start">98227 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.phoenix.ui.UploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.UploadTest.testSuccessfulFileUpload())</span>
+                <span class="method-start">98871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSuccessfulFileUpload</span>
+                <span class="method-start">105127 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSuccessfulFileUpload status=FAILURE method=UploadTest.testSuccessfulFileUpload(...)</span>
+                <span class="method-start">108122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.UploadTest.testUploadPageAccessibleAfterLogin())</span>
+                <span class="method-start">109022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUploadPageAccessibleAfterLogin</span>
+                <span class="method-start">112836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testUploadPageAccessibleAfterLogin status=SUCCESS method=UploadTest.testUploadPageA...)</span>
+                <span class="method-start">115307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.UploadTest.testDynamicContentLoading())</span>
+                <span class="method-start">115487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDynamicContentLoading</span>
+                <span class="method-start">119003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDynamicContentLoading status=FAILURE method=UploadTest.testDynamicContentLoadin...)</span>
+                <span class="method-start">135789 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.UploadTest.testFileInputElementPresent())</span>
+                <span class="method-start">135960 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFileInputElementPresent</span>
+                <span class="method-start">140339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testFileInputElementPresent status=FAILURE method=UploadTest.testFileInputElementPr...)</span>
+                <span class="method-start">143904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.phoenix.ui.UploadTest.testSubmitWithoutFileHandlesGracefully())</span>
+                <span class="method-start">144057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSubmitWithoutFileHandlesGracefully</span>
+                <span class="method-start">147748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSubmitWithoutFileHandlesGracefully status=SUCCESS method=UploadTest.testSubmitW...)</span>
+                <span class="method-start">150154 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Project Phoenix – UI Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="headless" value="false"/>
+  <parameter name="baseUrl" value="https://the-internet.herokuapp.com"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.phoenix.listeners.TestListener"/>
+    <listener class-name="com.phoenix.listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="2" name="UI Tests – Login(failed)">
+    <groups>
+      <run>
+        <include name="ui"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.phoenix.ui.LoginTest">
+        <methods>
+          <include name="testInvalidPassword"/>
+          <include name="testSqlInjectionAttempt"/>
+          <include name="setUp"/>
+          <include name="testEmptyPassword"/>
+          <include name="testSuccessfulLogin"/>
+          <include name="testEmptyUsername"/>
+          <include name="tearDown"/>
+          <include name="testPageTitle"/>
+          <include name="testInvalidUsername"/>
+          <include name="testSuccessFlashMessageContent"/>
+          <include name="testSelfHealingLocatorFallback"/>
+          <include name="testInputFieldsAreInteractable"/>
+        </methods>
+      </class> <!-- com.phoenix.ui.LoginTest -->
+    </classes>
+  </test> <!-- UI Tests – Login(failed) -->
+  <test thread-count="2" name="UI Tests – Upload(failed)">
+    <groups>
+      <run>
+        <include name="ui"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.phoenix.ui.UploadTest">
+        <methods>
+          <include name="testSuccessfulFileUpload"/>
+          <include name="testSubmitWithoutFileHandlesGracefully"/>
+          <include name="testFileInputElementPresent"/>
+          <include name="testUploadPageAccessibleAfterLogin"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testDynamicContentLoading"/>
+        </methods>
+      </class> <!-- com.phoenix.ui.UploadTest -->
+    </classes>
+  </test> <!-- UI Tests – Upload(failed) -->
+</suite> <!-- Failed suite [Project Phoenix – UI Suite] -->

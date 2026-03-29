@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    Project Phoenix – TestNG Full Suite
+    =====================================
+    Run order: API tests first (gate), then UI tests.
+    Both test groups run sequentially at suite level;
+    parallel="methods" inside each group for speed.
+-->
+<suite name="Project Phoenix – Full Suite" verbose="1" thread-count="2">
+
+    <!-- Global parameters (overridden by config.properties) -->
+    <parameter name="browser"  value="chrome"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="baseUrl"  value="https://the-internet.herokuapp.com"/>
+
+    <!-- ── Listeners ─────────────────────────────────────────────────── -->
+    <listeners>
+        <listener class-name="com.phoenix.listeners.TestListener"/>
+        <listener class-name="com.phoenix.listeners.RetryListener"/>
+    </listeners>
+
+    <!-- ── 1. API Tests (must pass before UI runs) ───────────────────── -->
+    <test name="API Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="api"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.phoenix.api.LoginApiTest"/>
+        </classes>
+    </test>
+
+    <!-- ── 2. UI Tests – Login Flow ──────────────────────────────────── -->
+    <test name="UI Tests – Login" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="ui"/>
+                <include name="login"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.phoenix.ui.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- ── 3. UI Tests – Document Upload ────────────────────────────── -->
+    <test name="UI Tests – Upload" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="ui"/>
+                <include name="upload"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.phoenix.ui.UploadTest"/>
+        </classes>
+    </test>
+
+</suite>

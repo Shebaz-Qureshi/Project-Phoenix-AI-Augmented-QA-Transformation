@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="16" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-29T13:00:50 IST" name="Project Phoenix – Full Suite" finished-at="2026-03-29T13:03:20 IST" duration-ms="150575">
+    <groups>
+      <group name="healing">
+        <method signature="LoginTest.testSelfHealingLocatorFallback()[pri:8, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSelfHealingLocatorFallback" class="com.phoenix.ui.LoginTest"/>
+      </group> <!-- healing -->
+      <group name="performance">
+        <method signature="LoginApiTest.testLoginResponseTimeSLA()[pri:6, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testLoginResponseTimeSLA" class="com.phoenix.api.LoginApiTest"/>
+      </group> <!-- performance -->
+      <group name="ui">
+        <method signature="LoginTest.testSuccessfulLogin()[pri:1, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessfulLogin" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSuccessFlashMessageContent()[pri:2, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessFlashMessageContent" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInvalidUsername()[pri:3, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInvalidPassword()[pri:4, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyUsername()[pri:5, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyPassword()[pri:6, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSqlInjectionAttempt()[pri:7, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSqlInjectionAttempt" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSelfHealingLocatorFallback()[pri:8, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSelfHealingLocatorFallback" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testPageTitle()[pri:9, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testPageTitle" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInputFieldsAreInteractable()[pri:10, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInputFieldsAreInteractable" class="com.phoenix.ui.LoginTest"/>
+        <method signature="UploadTest.testSuccessfulFileUpload()[pri:1, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSuccessfulFileUpload" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testUploadPageAccessibleAfterLogin()[pri:2, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testUploadPageAccessibleAfterLogin" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testDynamicContentLoading()[pri:3, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testDynamicContentLoading" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testFileInputElementPresent()[pri:4, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testFileInputElementPresent" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testSubmitWithoutFileHandlesGracefully()[pri:5, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSubmitWithoutFileHandlesGracefully" class="com.phoenix.ui.UploadTest"/>
+      </group> <!-- ui -->
+      <group name="upload">
+        <method signature="UploadTest.testSuccessfulFileUpload()[pri:1, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSuccessfulFileUpload" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testUploadPageAccessibleAfterLogin()[pri:2, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testUploadPageAccessibleAfterLogin" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testDynamicContentLoading()[pri:3, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testDynamicContentLoading" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testFileInputElementPresent()[pri:4, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testFileInputElementPresent" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testSubmitWithoutFileHandlesGracefully()[pri:5, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSubmitWithoutFileHandlesGracefully" class="com.phoenix.ui.UploadTest"/>
+      </group> <!-- upload -->
+      <group name="accessibility">
+        <method signature="LoginTest.testPageTitle()[pri:9, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testPageTitle" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInputFieldsAreInteractable()[pri:10, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInputFieldsAreInteractable" class="com.phoenix.ui.LoginTest"/>
+      </group> <!-- accessibility -->
+      <group name="regression">
+        <method signature="LoginApiTest.testInvalidUsernameReturnsError()[pri:3, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testInvalidUsernameReturnsError" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testInvalidPasswordReturnsError()[pri:4, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testInvalidPasswordReturnsError" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testEmptyCredentialsHandledGracefully()[pri:5, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testEmptyCredentialsHandledGracefully" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testResponseHeadersPresent()[pri:7, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testResponseHeadersPresent" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginTest.testInvalidUsername()[pri:3, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInvalidPassword()[pri:4, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyUsername()[pri:5, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyPassword()[pri:6, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSqlInjectionAttempt()[pri:7, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSqlInjectionAttempt" class="com.phoenix.ui.LoginTest"/>
+        <method signature="UploadTest.testFileInputElementPresent()[pri:4, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testFileInputElementPresent" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testSubmitWithoutFileHandlesGracefully()[pri:5, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSubmitWithoutFileHandlesGracefully" class="com.phoenix.ui.UploadTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginApiTest.testSiteHealthCheck()[pri:1, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testSiteHealthCheck" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testValidLoginReturnsRedirectOrOk()[pri:2, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testValidLoginReturnsRedirectOrOk" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginTest.testSuccessfulLogin()[pri:1, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessfulLogin" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSuccessFlashMessageContent()[pri:2, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessFlashMessageContent" class="com.phoenix.ui.LoginTest"/>
+        <method signature="UploadTest.testSuccessfulFileUpload()[pri:1, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testSuccessfulFileUpload" class="com.phoenix.ui.UploadTest"/>
+        <method signature="UploadTest.testUploadPageAccessibleAfterLogin()[pri:2, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testUploadPageAccessibleAfterLogin" class="com.phoenix.ui.UploadTest"/>
+      </group> <!-- smoke -->
+      <group name="dynamic">
+        <method signature="UploadTest.testDynamicContentLoading()[pri:3, instance:com.phoenix.ui.UploadTest@7d3430a7]" name="testDynamicContentLoading" class="com.phoenix.ui.UploadTest"/>
+      </group> <!-- dynamic -->
+      <group name="api">
+        <method signature="LoginApiTest.testSiteHealthCheck()[pri:1, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testSiteHealthCheck" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testValidLoginReturnsRedirectOrOk()[pri:2, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testValidLoginReturnsRedirectOrOk" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testInvalidUsernameReturnsError()[pri:3, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testInvalidUsernameReturnsError" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testInvalidPasswordReturnsError()[pri:4, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testInvalidPasswordReturnsError" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testEmptyCredentialsHandledGracefully()[pri:5, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testEmptyCredentialsHandledGracefully" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testLoginResponseTimeSLA()[pri:6, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testLoginResponseTimeSLA" class="com.phoenix.api.LoginApiTest"/>
+        <method signature="LoginApiTest.testResponseHeadersPresent()[pri:7, instance:com.phoenix.api.LoginApiTest@2ece4966]" name="testResponseHeadersPresent" class="com.phoenix.api.LoginApiTest"/>
+      </group> <!-- api -->
+      <group name="login">
+        <method signature="LoginTest.testSuccessfulLogin()[pri:1, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessfulLogin" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSuccessFlashMessageContent()[pri:2, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSuccessFlashMessageContent" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInvalidUsername()[pri:3, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInvalidPassword()[pri:4, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInvalidPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyUsername()[pri:5, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyUsername" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testEmptyPassword()[pri:6, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testEmptyPassword" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSqlInjectionAttempt()[pri:7, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSqlInjectionAttempt" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testSelfHealingLocatorFallback()[pri:8, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testSelfHealingLocatorFallback" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testPageTitle()[pri:9, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testPageTitle" class="com.phoenix.ui.LoginTest"/>
+        <method signature="LoginTest.testInputFieldsAreInteractable()[pri:10, instance:com.phoenix.ui.LoginTest@65a4798f]" name="testInputFieldsAreInteractable" class="com.phoenix.ui.LoginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2026-03-29T13:00:50 IST" name="API Tests" finished-at="2026-03-29T13:00:59 IST" duration-ms="9575">
+      <class name="com.phoenix.api.LoginApiTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:50 IST" name="setUp" finished-at="2026-03-29T13:00:50 IST" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testSiteHealthCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSiteHealthCheck()[pri:1, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:50 IST" name="testSiteHealthCheck" description="GET / – verify the site is reachable and returns HTTP 200" finished-at="2026-03-29T13:00:53 IST" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSiteHealthCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:53 IST" name="tearDown" finished-at="2026-03-29T13:00:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSiteHealthCheck status=SUCCESS method=LoginApiTest.testSiteHealthCheck()[pri:1, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:53 IST" name="setUp" finished-at="2026-03-29T13:00:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testValidLoginReturnsRedirectOrOk()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLoginReturnsRedirectOrOk()[pri:2, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:53 IST" name="testValidLoginReturnsRedirectOrOk" description="POST /login with valid credentials must produce a redirect (302) or 200" finished-at="2026-03-29T13:00:54 IST" duration-ms="1071" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HTTP 404 not in expected set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HTTP 404 not in expected set
+at com.phoenix.api.ApiClient.assertStatusIn(ApiClient.java:117)
+at com.phoenix.api.LoginApiTest.testValidLoginReturnsRedirectOrOk(LoginApiTest.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLoginReturnsRedirectOrOk -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:54 IST" name="tearDown" finished-at="2026-03-29T13:00:54 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLoginReturnsRedirectOrOk status=FAILURE method=LoginApiTest.testValidLoginReturnsRedirectOrOk()[pri:2, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:54 IST" name="setUp" finished-at="2026-03-29T13:00:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testInvalidUsernameReturnsError()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidUsernameReturnsError()[pri:3, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:54 IST" name="testInvalidUsernameReturnsError" description="POST /login with invalid username must return an error body" finished-at="2026-03-29T13:00:55 IST" duration-ms="1068" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected HTTP 200, got 404
+Body: <h1>Not Found</h1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected HTTP 200, got 404
+Body: <h1>Not Found</h1>
+at com.phoenix.api.ApiClient.assertStatus(ApiClient.java:101)
+at com.phoenix.api.LoginApiTest.testInvalidUsernameReturnsError(LoginApiTest.java:117)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidUsernameReturnsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:55 IST" name="tearDown" finished-at="2026-03-29T13:00:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidUsernameReturnsError status=FAILURE method=LoginApiTest.testInvalidUsernameReturnsError()[pri:3, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:55 IST" name="setUp" finished-at="2026-03-29T13:00:55 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testInvalidPasswordReturnsError()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidPasswordReturnsError()[pri:4, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:55 IST" name="testInvalidPasswordReturnsError" description="POST /login with invalid password must return an error body" finished-at="2026-03-29T13:00:56 IST" duration-ms="1047" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected HTTP 200, got 404
+Body: <h1>Not Found</h1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected HTTP 200, got 404
+Body: <h1>Not Found</h1>
+at com.phoenix.api.ApiClient.assertStatus(ApiClient.java:101)
+at com.phoenix.api.LoginApiTest.testInvalidPasswordReturnsError(LoginApiTest.java:132)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPasswordReturnsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:56 IST" name="tearDown" finished-at="2026-03-29T13:00:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidPasswordReturnsError status=FAILURE method=LoginApiTest.testInvalidPasswordReturnsError()[pri:4, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:56 IST" name="setUp" finished-at="2026-03-29T13:00:56 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testEmptyCredentialsHandledGracefully()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyCredentialsHandledGracefully()[pri:5, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:56 IST" name="testEmptyCredentialsHandledGracefully" description="POST /login with empty credentials must be handled gracefully" finished-at="2026-03-29T13:00:57 IST" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCredentialsHandledGracefully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:57 IST" name="tearDown" finished-at="2026-03-29T13:00:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyCredentialsHandledGracefully status=SUCCESS method=LoginApiTest.testEmptyCredentialsHandledGracefully()[pri:5, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:57 IST" name="setUp" finished-at="2026-03-29T13:00:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testLoginResponseTimeSLA()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginResponseTimeSLA()[pri:6, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:57 IST" name="testLoginResponseTimeSLA" description="POST /login must respond within the 5000ms SLA" finished-at="2026-03-29T13:00:58 IST" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginResponseTimeSLA -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:58 IST" name="tearDown" finished-at="2026-03-29T13:00:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginResponseTimeSLA status=SUCCESS method=LoginApiTest.testLoginResponseTimeSLA()[pri:6, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:58 IST" name="setUp" finished-at="2026-03-29T13:00:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.api.LoginApiTest.testResponseHeadersPresent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testResponseHeadersPresent()[pri:7, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:58 IST" name="testResponseHeadersPresent" description="GET / must include a valid Content-Type header" finished-at="2026-03-29T13:00:59 IST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseHeadersPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.api.LoginApiTest@2ece4966]" started-at="2026-03-29T13:00:59 IST" name="tearDown" finished-at="2026-03-29T13:00:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testResponseHeadersPresent status=SUCCESS method=LoginApiTest.testResponseHeadersPresent()[pri:7, instance:com.phoenix.api.LoginApiTest@2ece4966] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phoenix.api.LoginApiTest -->
+    </test> <!-- API Tests -->
+    <test started-at="2026-03-29T13:01:00 IST" name="UI Tests – Login" finished-at="2026-03-29T13:02:29 IST" duration-ms="89127">
+      <class name="com.phoenix.ui.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:00 IST" name="setUp" finished-at="2026-03-29T13:01:06 IST" duration-ms="6262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testSuccessfulLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:1, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:06 IST" name="testSuccessfulLogin" description="Valid credentials should redirect to secure area with success flash" finished-at="2026-03-29T13:01:08 IST" duration-ms="2219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:08 IST" name="tearDown" finished-at="2026-03-29T13:01:08 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTest.testSuccessfulLogin()[pri:1, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:08 IST" name="setUp" finished-at="2026-03-29T13:01:12 IST" duration-ms="3588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testSuccessFlashMessageContent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessFlashMessageContent()[pri:2, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:12 IST" name="testSuccessFlashMessageContent" description="Success flash message text and CSS class must match expected values" finished-at="2026-03-29T13:01:14 IST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessFlashMessageContent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:14 IST" name="tearDown" finished-at="2026-03-29T13:01:14 IST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessFlashMessageContent status=SUCCESS method=LoginTest.testSuccessFlashMessageContent()[pri:2, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:14 IST" name="setUp" finished-at="2026-03-29T13:01:18 IST" duration-ms="3881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testInvalidUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidUsername()[pri:3, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:18 IST" name="testInvalidUsername" description="Invalid username should show error flash" finished-at="2026-03-29T13:01:20 IST" duration-ms="2064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:20 IST" name="tearDown" finished-at="2026-03-29T13:01:20 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidUsername status=SUCCESS method=LoginTest.testInvalidUsername()[pri:3, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:20 IST" name="setUp" finished-at="2026-03-29T13:01:23 IST" duration-ms="3393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testInvalidPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidPassword()[pri:4, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:23 IST" name="testInvalidPassword" description="Invalid password should show error flash" finished-at="2026-03-29T13:01:25 IST" duration-ms="1720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:25 IST" name="tearDown" finished-at="2026-03-29T13:01:25 IST" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidPassword status=SUCCESS method=LoginTest.testInvalidPassword()[pri:4, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:25 IST" name="setUp" finished-at="2026-03-29T13:01:29 IST" duration-ms="3793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testEmptyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyUsername()[pri:5, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:29 IST" name="testEmptyUsername" description="Empty username field should produce an error" finished-at="2026-03-29T13:01:31 IST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:31 IST" name="tearDown" finished-at="2026-03-29T13:01:31 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyUsername status=SUCCESS method=LoginTest.testEmptyUsername()[pri:5, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:31 IST" name="setUp" finished-at="2026-03-29T13:01:36 IST" duration-ms="4716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testEmptyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyPassword()[pri:6, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:36 IST" name="testEmptyPassword" description="Empty password field should produce an error" finished-at="2026-03-29T13:01:37 IST" duration-ms="1371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:37 IST" name="tearDown" finished-at="2026-03-29T13:01:37 IST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyPassword status=SUCCESS method=LoginTest.testEmptyPassword()[pri:6, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:37 IST" name="setUp" finished-at="2026-03-29T13:01:41 IST" duration-ms="4017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testSqlInjectionAttempt()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSqlInjectionAttempt()[pri:7, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:41 IST" name="testSqlInjectionAttempt" description="SQL injection attempt should be rejected safely" finished-at="2026-03-29T13:01:42 IST" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSqlInjectionAttempt -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:42 IST" name="tearDown" finished-at="2026-03-29T13:01:43 IST" duration-ms="703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSqlInjectionAttempt status=SUCCESS method=LoginTest.testSqlInjectionAttempt()[pri:7, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:43 IST" name="setUp" finished-at="2026-03-29T13:01:46 IST" duration-ms="3358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testSelfHealingLocatorFallback()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSelfHealingLocatorFallback()[pri:8, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:01:46 IST" name="testSelfHealingLocatorFallback" description="SelfHealingLocator must fall back gracefully when the primary selector is removed from the DOM at runtime" finished-at="2026-03-29T13:02:08 IST" duration-ms="22262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelfHealingLocatorFallback -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:08 IST" name="tearDown" finished-at="2026-03-29T13:02:09 IST" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSelfHealingLocatorFallback status=SUCCESS method=LoginTest.testSelfHealingLocatorFallback()[pri:8, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:09 IST" name="setUp" finished-at="2026-03-29T13:02:15 IST" duration-ms="6581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testPageTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageTitle()[pri:9, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:15 IST" name="testPageTitle" description="Login page must have the expected page title" finished-at="2026-03-29T13:02:19 IST" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:19 IST" name="tearDown" finished-at="2026-03-29T13:02:19 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPageTitle status=SUCCESS method=LoginTest.testPageTitle()[pri:9, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:19 IST" name="setUp" finished-at="2026-03-29T13:02:26 IST" duration-ms="6251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.LoginTest.testInputFieldsAreInteractable()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInputFieldsAreInteractable()[pri:10, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:26 IST" name="testInputFieldsAreInteractable" description="Username and password inputs must be interactable" finished-at="2026-03-29T13:02:28 IST" duration-ms="2466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputFieldsAreInteractable -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.LoginTest@65a4798f]" started-at="2026-03-29T13:02:28 IST" name="tearDown" finished-at="2026-03-29T13:02:29 IST" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInputFieldsAreInteractable status=SUCCESS method=LoginTest.testInputFieldsAreInteractable()[pri:10, instance:com.phoenix.ui.LoginTest@65a4798f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phoenix.ui.LoginTest -->
+    </test> <!-- UI Tests – Login -->
+    <test started-at="2026-03-29T13:02:29 IST" name="UI Tests – Upload" finished-at="2026-03-29T13:03:20 IST" duration-ms="51476">
+      <class name="com.phoenix.ui.UploadTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:29 IST" name="setUp" finished-at="2026-03-29T13:02:35 IST" duration-ms="6256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.UploadTest.testSuccessfulFileUpload()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulFileUpload()[pri:1, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:35 IST" name="testSuccessfulFileUpload" description="Upload a .txt document and confirm the filename in the response" finished-at="2026-03-29T13:02:38 IST" duration-ms="2943" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.io.File.<init>(File.java:278)
+at com.phoenix.pages.UploadPage.selectFile(UploadPage.java:67)
+at com.phoenix.pages.UploadPage.uploadFile(UploadPage.java:89)
+at com.phoenix.ui.UploadTest.testSuccessfulFileUpload(UploadTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulFileUpload -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:38 IST" name="tearDown" finished-at="2026-03-29T13:02:39 IST" duration-ms="900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulFileUpload status=FAILURE method=UploadTest.testSuccessfulFileUpload()[pri:1, instance:com.phoenix.ui.UploadTest@7d3430a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:39 IST" name="setUp" finished-at="2026-03-29T13:02:43 IST" duration-ms="3814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.UploadTest.testUploadPageAccessibleAfterLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUploadPageAccessibleAfterLogin()[pri:2, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:43 IST" name="testUploadPageAccessibleAfterLogin" description="Upload page should be accessible immediately after login" finished-at="2026-03-29T13:02:45 IST" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadPageAccessibleAfterLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:45 IST" name="tearDown" finished-at="2026-03-29T13:02:45 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUploadPageAccessibleAfterLogin status=SUCCESS method=UploadTest.testUploadPageAccessibleAfterLogin()[pri:2, instance:com.phoenix.ui.UploadTest@7d3430a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:45 IST" name="setUp" finished-at="2026-03-29T13:02:49 IST" duration-ms="3516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.UploadTest.testDynamicContentLoading()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDynamicContentLoading()[pri:3, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:02:49 IST" name="testDynamicContentLoading" description="Trigger a dynamically-loaded element – simulates async KYC status update" finished-at="2026-03-29T13:03:06 IST" duration-ms="16735" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: finish (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53557}, goog:processID: 13872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53557/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a15e73be58cbe4a4937b223ed922abd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: finish (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53557}, goog:processID: 13872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53557/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a15e73be58cbe4a4937b223ed922abd
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.phoenix.pages.BasePage.waitForVisible(BasePage.java:65)
+at com.phoenix.pages.UploadPage.triggerAndWaitForDynamicContent(UploadPage.java:103)
+at com.phoenix.ui.UploadTest.testDynamicContentLoading(UploadTest.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicContentLoading -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:06 IST" name="tearDown" finished-at="2026-03-29T13:03:06 IST" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDynamicContentLoading status=FAILURE method=UploadTest.testDynamicContentLoading()[pri:3, instance:com.phoenix.ui.UploadTest@7d3430a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:06 IST" name="setUp" finished-at="2026-03-29T13:03:10 IST" duration-ms="4379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.UploadTest.testFileInputElementPresent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFileInputElementPresent()[pri:4, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:10 IST" name="testFileInputElementPresent" description="File input element must be present and enabled on the upload page" finished-at="2026-03-29T13:03:14 IST" duration-ms="3511" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.io.File.<init>(File.java:278)
+at com.phoenix.pages.UploadPage.selectFile(UploadPage.java:67)
+at com.phoenix.ui.UploadTest.testFileInputElementPresent(UploadTest.java:123)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileInputElementPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:14 IST" name="tearDown" finished-at="2026-03-29T13:03:14 IST" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFileInputElementPresent status=FAILURE method=UploadTest.testFileInputElementPresent()[pri:4, instance:com.phoenix.ui.UploadTest@7d3430a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:14 IST" name="setUp" finished-at="2026-03-29T13:03:18 IST" duration-ms="3691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.phoenix.ui.UploadTest.testSubmitWithoutFileHandlesGracefully()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSubmitWithoutFileHandlesGracefully()[pri:5, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:18 IST" name="testSubmitWithoutFileHandlesGracefully" description="Submitting without a file should not crash the application" finished-at="2026-03-29T13:03:20 IST" duration-ms="2405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubmitWithoutFileHandlesGracefully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phoenix.ui.UploadTest@7d3430a7]" started-at="2026-03-29T13:03:20 IST" name="tearDown" finished-at="2026-03-29T13:03:20 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSubmitWithoutFileHandlesGracefully status=SUCCESS method=UploadTest.testSubmitWithoutFileHandlesGracefully()[pri:5, instance:com.phoenix.ui.UploadTest@7d3430a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phoenix.ui.UploadTest -->
+    </test> <!-- UI Tests – Upload -->
+  </suite> <!-- Project Phoenix – Full Suite -->
+</testng-results>

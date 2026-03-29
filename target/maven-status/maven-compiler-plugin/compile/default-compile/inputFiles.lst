@@ -1,0 +1,12 @@
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\api\ApiClient.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\helpers\SelfHealingLocator.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\listeners\RetryAnalyzer.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\listeners\RetryListener.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\listeners\TestListener.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\pages\BasePage.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\pages\LoginPage.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\pages\UploadPage.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\utils\ConfigReader.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\utils\DriverManager.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\utils\ExtentReportManager.java
+E:\InspiredEnergy\SeleniumAIAutomation\project-phoenix-selenium\src\main\java\com\phoenix\utils\ScreenshotUtils.java

@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  UI Tests – Login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UI Tests – Login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 29 13:01:00 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89127 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>ui login </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testInputFieldsAreInteractable()'><b>testInputFieldsAreInteractable</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Username and password inputs must be interactable</td>
+<td></td>
+<td>2</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testSuccessFlashMessageContent()'><b>testSuccessFlashMessageContent</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Success flash message text and CSS class must match expected values</td>
+<td></td>
+<td>1</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testSuccessfulLogin()'><b>testSuccessfulLogin</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Valid credentials should redirect to secure area with success flash</td>
+<td></td>
+<td>2</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Empty username field should produce an error</td>
+<td></td>
+<td>1</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testSelfHealingLocatorFallback()'><b>testSelfHealingLocatorFallback</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: SelfHealingLocator must fall back gracefully when the primary selector is removed from the DOM at runtime</td>
+<td></td>
+<td>22</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Invalid password should show error flash</td>
+<td></td>
+<td>1</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testInvalidUsername()'><b>testInvalidUsername</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Invalid username should show error flash</td>
+<td></td>
+<td>2</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testSqlInjectionAttempt()'><b>testSqlInjectionAttempt</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: SQL injection attempt should be rejected safely</td>
+<td></td>
+<td>0</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Empty password field should produce an error</td>
+<td></td>
+<td>1</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+<tr>
+<td title='com.phoenix.ui.LoginTest.testPageTitle()'><b>testPageTitle</b><br>Test class: com.phoenix.ui.LoginTest<br>Test method: Login page must have the expected page title</td>
+<td></td>
+<td>3</td>
+<td>com.phoenix.ui.LoginTest@65a4798f</td></tr>
+</table><p>
+</body>
+</html>

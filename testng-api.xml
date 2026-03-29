@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- Project Phoenix – API Tests Only (CI Gate) -->
+<suite name="Project Phoenix – API Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.phoenix.listeners.TestListener"/>
+    </listeners>
+
+    <test name="API Tests">
+        <groups>
+            <run>
+                <include name="api"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.phoenix.api.LoginApiTest"/>
+        </classes>
+    </test>
+
+</suite>
