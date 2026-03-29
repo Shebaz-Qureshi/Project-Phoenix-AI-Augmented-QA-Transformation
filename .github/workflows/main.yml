@@ -40,7 +40,7 @@ jobs:
 
   # ── Job 1: API Tests (GATE) ───────────────────────────────────────────────
   api-tests:
-    name: '🔌 API Tests (REST Assured)'
+    name: 'API Tests (REST Assured)'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -55,7 +55,7 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: '🔌 Run API tests (Maven profile: api)'
+      - name: 'Run API tests (Maven profile: api)'
         run: |
           mvn test -P api \
             -Dbaseurl=${{ env.BASE_URL }} \
@@ -85,7 +85,7 @@ jobs:
 
   # ── Job 2: UI Tests (gated on api-tests) ─────────────────────────────────
   ui-tests:
-    name: '🖥️ UI Tests (Selenium + Chrome)'
+    name: 'UI Tests (Selenium + Chrome)'
     runs-on: ubuntu-latest
     needs: api-tests           # ← HARD GATE
     timeout-minutes: 25
@@ -110,7 +110,7 @@ jobs:
           sudo apt-get install -y google-chrome-stable
           google-chrome --version
 
-      - name: '🖥️ Run UI tests (Maven profile: ui, headless)'
+      - name: 'Run UI tests (Maven profile: ui, headless)'
         run: |
           mvn test -P ui \
             -Dbrowser=chrome \
@@ -149,7 +149,7 @@ jobs:
 
   # ── Job 3: Report Summary ─────────────────────────────────────────────────
   report:
-    name: '📊 Report Summary'
+    name: 'Report Summary'
     runs-on: ubuntu-latest
     needs: [ api-tests, ui-tests ]
     if: always()
@@ -183,5 +183,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## 📊 Project Phoenix – Test Report\n\nExtent Report artifacts available in [Actions Run #${{ github.run_number }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})\n\n- API Tests: ${{ needs.api-tests.result }}\n- UI Tests: ${{ needs.ui-tests.result }}`
+              body: `## Project Phoenix – Test Report\n\nExtent Report artifacts available in [Actions Run #${{ github.run_number }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})\n\n- API Tests: ${{ needs.api-tests.result }}\n- UI Tests: ${{ needs.ui-tests.result }}`
             })
