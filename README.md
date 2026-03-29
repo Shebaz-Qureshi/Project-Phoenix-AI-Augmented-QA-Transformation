@@ -4,6 +4,7 @@ Developed by Shebaz Zahid Qureshi
   
 Stack: **Selenium 4 · Maven · TestNG · Extent Reports 5 · REST Assured · Eclipse**
 
+Additionally AI Self Healing
 ---
 
 ## Architecture Overview
@@ -19,7 +20,7 @@ project-phoenix-selenium/
 │   ├── api/
 │   │   └── ApiClient.java             ← REST Assured wrapper (POST /login, GET /)
 │   ├── helpers/
-│   │   └── SelfHealingLocator.java    ← ⭐ Core self-healing engine
+│   │   └── SelfHealingLocator.java    ← Core self-healing engine
 │   ├── listeners/
 │   │   ├── TestListener.java          ← TestNG → Extent Reports bridge
 │   │   ├── RetryAnalyzer.java         ← Auto-retry on failure
@@ -181,7 +182,7 @@ The report includes:
 
 ```
 ═══════════════════════════════════════════════════════════════════
-⚠  SELF-HEALING TRIGGERED  –  Username field
+  SELF-HEALING TRIGGERED  –  Username field
 ═══════════════════════════════════════════════════════════════════
   Primary  (FAILED): By.id: username
   Fallback (USED)  : By.cssSelector: [name='username']
