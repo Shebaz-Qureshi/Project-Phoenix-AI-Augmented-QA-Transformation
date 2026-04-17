@@ -63,7 +63,7 @@ public class UploadTest extends BaseTest {
         logStep("Selecting and uploading file: kyc-sample.txt");
         
 //        uploadPage.uploadFile(absoluteTestFile);
-        uploadPage.uploadFile("F:\\Projects\\project-phoenix-selenium\\src\\test\\resources\\testdata\\kyc-sample.txt");
+        uploadPage.uploadFile("Project-Phoenix-AI-Augmented-QA-Transformation\\src\\test\\resources\\testdata\\kyc-sample.txt");
 //        uploadPage.uploadFile(absoluteTestFile)
 //                  .handlePasswordManagerPopup()
 //                  .assertUploadSuccess("kyc-sample.txt");
@@ -127,7 +127,7 @@ public class UploadTest extends BaseTest {
             // Verify that selecting a file does not throw
             logStep("Selecting file to verify input accepts it");
  //           uploadPage.selectFile(absoluteTestFile);
-            uploadPage.selectFile("F:\\Projects\\project-phoenix-selenium\\src\\test\\resources\\testdata\\kyc-sample.txt");
+            uploadPage.selectFile("Project-Phoenix-AI-Augmented-QA-Transformation\\src\\test\\resources\\testdata\\kyc-sample.txt");
             
             
             logPass("File input is present and accepted the file selection");
