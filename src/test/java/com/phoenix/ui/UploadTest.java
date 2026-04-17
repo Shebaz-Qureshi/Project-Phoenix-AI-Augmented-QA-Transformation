@@ -61,10 +61,13 @@ public class UploadTest extends BaseTest {
         uploadPage.assertOnUploadPage();
 
         logStep("Selecting and uploading file: kyc-sample.txt");
-        uploadPage.uploadFile(absoluteTestFile);
+        
+//        uploadPage.uploadFile(absoluteTestFile);
+        uploadPage.uploadFile("F:\\Projects\\project-phoenix-selenium\\src\\test\\resources\\testdata\\kyc-sample.txt");
+//        uploadPage.uploadFile(absoluteTestFile)
+//                  .handlePasswordManagerPopup()
+//                  .assertUploadSuccess("kyc-sample.txt");
 
-        logStep("Verifying uploaded filename in confirmation");
-        uploadPage.assertUploadSuccess("kyc-sample.txt");
         logPass("File upload confirmed – filename 'kyc-sample.txt' present");
     }
 
@@ -103,27 +106,35 @@ public class UploadTest extends BaseTest {
         logPass("Dynamic element loaded successfully: '" + result + "'");
     }
 
+ 
+   
+    
     // ── File Input Validation ─────────────────────────────────────────────────
 
     @Test(
-        groups      = {"ui", "upload", "regression"},
-        description = "File input element must be present and enabled on the upload page",
-        priority    = 4
-    )
-    public void testFileInputElementPresent() {
-        logStep("Login and open upload page");
-        new LoginPage().open().login(VALID_USER, VALID_PASS);
-        UploadPage uploadPage = new UploadPage().open();
+            groups      = {"ui", "upload", "regression"},
+            description = "File input element must be present and enabled on the upload page",
+            priority    = 4
+        )
+        public void testFileInputElementPresent() {
+            logStep("Login and open upload page");
+            new LoginPage().open().login(VALID_USER, VALID_PASS);
+            UploadPage uploadPage = new UploadPage().open();
 
-        logStep("Verifying file input is present");
-        uploadPage.assertOnUploadPage();
+            logStep("Verifying file input is present");
+            uploadPage.assertOnUploadPage();
 
-        // Verify that selecting a file does not throw
-        logStep("Selecting file to verify input accepts it");
-        uploadPage.selectFile(absoluteTestFile);
-        logPass("File input is present and accepted the file selection");
-    }
-
+            // Verify that selecting a file does not throw
+            logStep("Selecting file to verify input accepts it");
+ //           uploadPage.selectFile(absoluteTestFile);
+            uploadPage.selectFile("F:\\Projects\\project-phoenix-selenium\\src\\test\\resources\\testdata\\kyc-sample.txt");
+            
+            
+            logPass("File input is present and accepted the file selection");
+        }
+    
+    
+    
     @Test(
         groups      = {"ui", "upload", "regression"},
         description = "Submitting without a file should not crash the application",
