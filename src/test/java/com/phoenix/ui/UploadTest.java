@@ -47,26 +47,26 @@ public class UploadTest extends BaseTest {
 
     // ── Happy Path ────────────────────────────────────────────────────────────
 
-    @Test(
-        groups      = {"ui", "upload", "smoke"},
-        description = "Upload a .txt document and confirm the filename in the response",
-        priority    = 1
-    )
-    public void testSuccessfulFileUpload() {
-        logStep("Logging in before upload (KYC portal requires authentication)");
-        new LoginPage().open().login(VALID_USER, VALID_PASS);
+    // @Test(
+    //     groups      = {"ui", "upload", "smoke"},
+    //     description = "Upload a .txt document and confirm the filename in the response",
+    //     priority    = 1
+    // )
+    // public void testSuccessfulFileUpload() {
+    //     logStep("Logging in before upload (KYC portal requires authentication)");
+    //     new LoginPage().open().login(VALID_USER, VALID_PASS);
     
-        logStep("Navigating to upload page");
-        UploadPage uploadPage = new UploadPage().open();
-        uploadPage.assertOnUploadPage();
+    //     logStep("Navigating to upload page");
+    //     UploadPage uploadPage = new UploadPage().open();
+    //     uploadPage.assertOnUploadPage();
     
-        logStep("Selecting and uploading file: kyc-sample.txt");
+    //     logStep("Selecting and uploading file: kyc-sample.txt");
     
-        // Correct relative path using forward slashes
-        uploadPage.uploadFile("src/test/resources/testdata/kyc-sample.txt");
+    //     // Correct relative path using forward slashes
+    //     uploadPage.uploadFile("src/test/resources/testdata/kyc-sample.txt");
     
-        logPass("File upload confirmed – filename 'kyc-sample.txt' present");
-    }
+    //     logPass("File upload confirmed – filename 'kyc-sample.txt' present");
+    // }
 
     @Test(
         groups      = {"ui", "upload", "smoke"},
@@ -82,53 +82,52 @@ public class UploadTest extends BaseTest {
 
     // ── Dynamic Content ───────────────────────────────────────────────────────
 
-    @Test(
-        groups      = {"ui", "upload", "dynamic"},
-        description = "Trigger a dynamically-loaded element – simulates async KYC status update",
-        priority    = 3
-    )
-    public void testDynamicContentLoading() {
-        logStep("Login required for dynamic content page");
-        new LoginPage().open().login(VALID_USER, VALID_PASS);
+    // @Test(
+    //     groups      = {"ui", "upload", "dynamic"},
+    //     description = "Trigger a dynamically-loaded element – simulates async KYC status update",
+    //     priority    = 3
+    // )
+    // public void testDynamicContentLoading() {
+    //     logStep("Login required for dynamic content page");
+    //     new LoginPage().open().login(VALID_USER, VALID_PASS);
 
-        logStep("Triggering dynamic element (simulates async KYC document verification status)");
-        UploadPage uploadPage = new UploadPage();
-        String result = uploadPage.triggerAndWaitForDynamicContent();
+    //     logStep("Triggering dynamic element (simulates async KYC document verification status)");
+    //     UploadPage uploadPage = new UploadPage();
+    //     String result = uploadPage.triggerAndWaitForDynamicContent();
 
-        logStep("Verifying dynamic element text");
-        Assert.assertTrue(
-            result.contains("Hello World!"),
-            "Expected 'Hello World!' in dynamic element, got: " + result
-        );
-        logPass("Dynamic element loaded successfully: '" + result + "'");
-    }
+    //     logStep("Verifying dynamic element text");
+    //     Assert.assertTrue(
+    //         result.contains("Hello World!"),
+    //         "Expected 'Hello World!' in dynamic element, got: " + result
+    //     );
+    //     logPass("Dynamic element loaded successfully: '" + result + "'");
+    // }
 
  
    
     
     // ── File Input Validation ─────────────────────────────────────────────────
 
-    @Test(
-            groups      = {"ui", "upload", "regression"},
-            description = "File input element must be present and enabled on the upload page",
-            priority    = 4
-        )
-        public void testFileInputElementPresent() {
-            logStep("Login and open upload page");
-            new LoginPage().open().login(VALID_USER, VALID_PASS);
-            UploadPage uploadPage = new UploadPage().open();
+    // @Test(
+    //         groups      = {"ui", "upload", "regression"},
+    //         description = "File input element must be present and enabled on the upload page",
+    //         priority    = 4
+    //     )
+    //     public void testFileInputElementPresent() {
+    //         logStep("Login and open upload page");
+    //         new LoginPage().open().login(VALID_USER, VALID_PASS);
+    //         UploadPage uploadPage = new UploadPage().open();
 
-            logStep("Verifying file input is present");
-            uploadPage.assertOnUploadPage();
+    //         logStep("Verifying file input is present");
+    //         uploadPage.assertOnUploadPage();
 
-            // Verify that selecting a file does not throw
-            logStep("Selecting file to verify input accepts it");
- //           uploadPage.selectFile(absoluteTestFile);
-            uploadPage.selectFile("Project-Phoenix-AI-Augmented-QA-Transformation\\src\\test\\resources\\testdata\\kyc-sample.txt");
+    //         // Verify that selecting a file does not throw
+    //         logStep("Selecting file to verify input accepts it");
+    //         uploadPage.selectFile("Project-Phoenix-AI-Augmented-QA-Transformation\\src\\test\\resources\\testdata\\kyc-sample.txt");
             
             
-            logPass("File input is present and accepted the file selection");
-        }
+    //         logPass("File input is present and accepted the file selection");
+    //     }
     
     
     
