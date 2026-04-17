@@ -1,3 +1,3 @@
 KYC Sample Document – Project Phoenix Automated Test
-Merchant ID: TEST-MERCHANT-001
+Merchant ID: TEST-MERCHANT-By Shebaz 002
 Document Type: Identity Verification
