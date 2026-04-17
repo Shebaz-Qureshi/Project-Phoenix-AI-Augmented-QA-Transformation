@@ -55,19 +55,16 @@ public class UploadTest extends BaseTest {
     public void testSuccessfulFileUpload() {
         logStep("Logging in before upload (KYC portal requires authentication)");
         new LoginPage().open().login(VALID_USER, VALID_PASS);
-
+    
         logStep("Navigating to upload page");
         UploadPage uploadPage = new UploadPage().open();
         uploadPage.assertOnUploadPage();
-
+    
         logStep("Selecting and uploading file: kyc-sample.txt");
-        
-//        uploadPage.uploadFile(absoluteTestFile);
-        uploadPage.uploadFile("Project-Phoenix-AI-Augmented-QA-Transformation\\src\\test\\resources\\testdata\\kyc-sample.txt");
-//        uploadPage.uploadFile(absoluteTestFile)
-//                  .handlePasswordManagerPopup()
-//                  .assertUploadSuccess("kyc-sample.txt");
-
+    
+        // Correct relative path using forward slashes
+        uploadPage.uploadFile("src/test/resources/testdata/kyc-sample.txt");
+    
         logPass("File upload confirmed – filename 'kyc-sample.txt' present");
     }
 
