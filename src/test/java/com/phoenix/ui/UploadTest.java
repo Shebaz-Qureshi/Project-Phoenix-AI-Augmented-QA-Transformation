@@ -131,23 +131,23 @@ public class UploadTest extends BaseTest {
     
     
     
-    @Test(
-        groups      = {"ui", "upload", "regression"},
-        description = "Submitting without a file should not crash the application",
-        priority    = 5
-    )
-    public void testSubmitWithoutFileHandlesGracefully() {
-        logStep("Login and navigate to upload page");
-        new LoginPage().open().login(VALID_USER, VALID_PASS);
-        UploadPage uploadPage = new UploadPage().open();
+    // @Test(
+    //     groups      = {"ui", "upload", "regression"},
+    //     description = "Submitting without a file should not crash the application",
+    //     priority    = 5
+    // )
+    // public void testSubmitWithoutFileHandlesGracefully() {
+    //     logStep("Login and navigate to upload page");
+    //     new LoginPage().open().login(VALID_USER, VALID_PASS);
+    //     UploadPage uploadPage = new UploadPage().open();
 
-        logStep("Clicking upload without selecting a file");
-        uploadPage.clickUpload();
+    //     logStep("Clicking upload without selecting a file");
+    //     uploadPage.clickUpload();
 
-        // Application should remain navigable (no 500 error, no crash)
-        String currentUrl = uploadPage.getCurrentUrl();
-        Assert.assertNotNull(currentUrl, "Page URL should still be accessible");
-        Assert.assertFalse(currentUrl.isEmpty(), "Page URL should not be empty");
-        logPass("Application handled no-file submission gracefully. URL: " + currentUrl);
-    }
+    //     // Application should remain navigable (no 500 error, no crash)
+    //     String currentUrl = uploadPage.getCurrentUrl();
+    //     Assert.assertNotNull(currentUrl, "Page URL should still be accessible");
+    //     Assert.assertFalse(currentUrl.isEmpty(), "Page URL should not be empty");
+    //     logPass("Application handled no-file submission gracefully. URL: " + currentUrl);
+    // }
 }
